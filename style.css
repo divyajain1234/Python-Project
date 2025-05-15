@@ -1,0 +1,132 @@
+body {
+  background: #ffe6f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #b30059;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #d46a99;
+  padding: 20px;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #ffd6e8;
+  border-radius: 15px;
+  font-size: 3rem;
+  line-height: 100px;
+  cursor: pointer;
+  color: #b30059;
+  font-weight: bold;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+.cell:hover {
+  background: #ffb3d9;
+}
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+input, select, button {
+  padding: 8px;
+  font-size: 1rem;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid #b30059;
+  outline: none;
+  color: #b30059;
+}
+button {
+  background: #ff66b2;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #ff3399;
+}
+#dashboard {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+#dashboard th, #dashboard td {
+  border: 1px solid #b30059;
+  padding: 8px;
+  text-align: center;
+}
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 999;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(179, 0, 89, 0.7); /* pinkish transparent */
+}
+
+.modal-content {
+  background-color: #fff0f6;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #b30059;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  color: #b30059;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.close {
+  color: #b30059;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff3399;
+}
+
+#modalBtn {
+  background: #ff66b2;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#modalBtn:hover {
+  background: #ff3399;
+}
